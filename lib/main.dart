@@ -22,7 +22,13 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[500],
       ),
       body: Center(
-        child: Image.asset('assets/china2.jpg'),
+        child: IconButton(
+          onPressed: () {
+            print('You clicked me');
+          },
+          icon: Icon(Icons.alternate_email),
+          color: Colors.blueAccent,
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         child: Text('+'),
@@ -33,8 +39,40 @@ class Home extends StatelessWidget {
   }
 }
 
-// Image
-//child: Image(
-//  image: NetworkImage('https://images.unsplash.com/photo-1510332981392-36692ea3a195?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80'),
-//  image: AssetImage('assets/china2.jpg'),
+// Icon
+//child: Icon(
+//  Icons.airplanemode_active,
+//  color: Colors.lightBlue,
+//  size: 50.0,
 //),
+
+// FlatButton
+//FlatButton(
+//  onPressed: () {
+//    print('you clicked me');
+//  },
+//  child: Text(
+//    'click me',
+//    style: TextStyle(
+//    color: Colors.white,
+//    ),
+//  ),
+//  color: Colors.red,
+//)
+
+// RaisedButton
+//RaisedButton.icon(
+//  onPressed: () {},
+//  icon: Icon(Icons.mail),
+//  label: Text('mail me'),
+//  color: Colors.blueAccent,
+//)
+
+// IconButton
+//IconButton(
+//  onPressed: () {
+//    print('You clicked me');
+//  },
+//  icon: Icon(Icons.alternate_email),
+//  color: Colors.blueAccent,
+//)
