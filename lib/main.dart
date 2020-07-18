@@ -21,9 +21,26 @@ class Home extends StatelessWidget {
         elevation: 10,
         backgroundColor: Colors.red[500],
       ),
-      body: Padding(
-        padding: EdgeInsets.all(30),
-        child: Text('Hola'),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          Text(
+            'Group 1',
+          ),
+          FlatButton(
+            onPressed: () {},
+            child: Text(
+              'Group 2',
+            ),
+            color: Colors.red,
+          ),
+          Container(
+            color: Colors.cyan,
+            padding: EdgeInsets.all(30.0),
+            child: Text('Group 3'),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         child: Text('+'),
