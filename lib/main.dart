@@ -21,14 +21,9 @@ class Home extends StatelessWidget {
         elevation: 10,
         backgroundColor: Colors.red[500],
       ),
-      body: Center(
-        child: IconButton(
-          onPressed: () {
-            print('You clicked me');
-          },
-          icon: Icon(Icons.alternate_email),
-          color: Colors.blueAccent,
-        ),
+      body: Padding(
+        padding: EdgeInsets.all(30),
+        child: Text('Hola'),
       ),
       floatingActionButton: FloatingActionButton(
         child: Text('+'),
@@ -39,40 +34,9 @@ class Home extends StatelessWidget {
   }
 }
 
-// Icon
-//child: Icon(
-//  Icons.airplanemode_active,
-//  color: Colors.lightBlue,
-//  size: 50.0,
+//body: Container(
+//  padding: EdgeInsets.fromLTRB(10, 20, 10, 80),
+//  margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
+//  color: Colors.grey[400],
+//  child: Text('hello'),
 //),
-
-// FlatButton
-//FlatButton(
-//  onPressed: () {
-//    print('you clicked me');
-//  },
-//  child: Text(
-//    'click me',
-//    style: TextStyle(
-//    color: Colors.white,
-//    ),
-//  ),
-//  color: Colors.red,
-//)
-
-// RaisedButton
-//RaisedButton.icon(
-//  onPressed: () {},
-//  icon: Icon(Icons.mail),
-//  label: Text('mail me'),
-//  color: Colors.blueAccent,
-//)
-
-// IconButton
-//IconButton(
-//  onPressed: () {
-//    print('You clicked me');
-//  },
-//  icon: Icon(Icons.alternate_email),
-//  color: Colors.blueAccent,
-//)
