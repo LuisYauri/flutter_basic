@@ -21,25 +21,31 @@ class Home extends StatelessWidget {
         elevation: 10,
         backgroundColor: Colors.red[500],
       ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
-          Text(
-            'Group 1',
-          ),
-          FlatButton(
-            onPressed: () {},
-            child: Text(
-              'Group 2',
-            ),
-            color: Colors.red,
+          Row(
+            children: <Widget>[
+              Text('Nǐ'),
+              Text('hǎo'),
+            ],
           ),
           Container(
+            padding: EdgeInsets.all(20.0),
             color: Colors.cyan,
-            padding: EdgeInsets.all(30.0),
-            child: Text('Group 3'),
+            child: Text('yī'),
           ),
+          Container(
+            padding: EdgeInsets.all(30.0),
+            color: Colors.pinkAccent,
+            child: Text('èr'),
+          ),
+          Container(
+            padding: EdgeInsets.all(40.0),
+            color: Colors.amber,
+            child: Text('sān'),
+          )
         ],
       ),
       floatingActionButton: FloatingActionButton(
